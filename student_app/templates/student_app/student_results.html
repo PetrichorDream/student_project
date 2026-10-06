@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Summary</title>
+</head>
+<body>
+    <h2>Student Registration Summary</h2>
+    <ul>
+        <li><strong>Student Name:</strong> {{ student_name }}</li>
+        <li><strong>Student ID:</strong> {{ student_id }}</li>
+        <li><strong>Major:</strong> {{ major }}</li>
+        <li><strong>Class Standing:</strong> {{ class_standing }}</li>
+        <li><strong>Programming Languages:</strong> {{ languages }}</li>
+        <li><strong>Expected Graduation:</strong> {{ grad_year }}</li>
+        <li><strong>Comments:</strong> {{ comments }}</li>
+    </ul>
+    <br>
+    <a href="{% url 'student_form' %}">Back to Form</a>
+</body>
+</html>
